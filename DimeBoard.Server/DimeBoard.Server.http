@@ -1,0 +1,6 @@
+@DimeBoard.Server_HostAddress = http://localhost:5148
+
+GET {{DimeBoard.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

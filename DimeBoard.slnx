@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="dimeboard.client/dimeboard.client.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="DimeBoard.Server/DimeBoard.Server.csproj" />
+</Solution>
