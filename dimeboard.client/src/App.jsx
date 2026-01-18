@@ -1,15 +1,16 @@
-// import { useEffect, useState } from 'react';
+import React from "react";
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LandingPage from './pages/LandingPage.jsx';
 
 function App() {
-    const testTite = "This is a testing page."
-
     return (
-        <div className="App">
-            <header className="App-header">
-                <h1>{testTite}</h1>
-            </header>
-        </div>
+        <Router>
+            <Routes>
+                /* Landing Page */
+                <Route path="/" element={<LandingPage />} />
+            </Routes>
+        </Router>
     );
 }
 
