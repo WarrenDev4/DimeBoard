@@ -1,0 +1,631 @@
+/* Dashboard.module.css */
+.dashboardWrapper {
+    background: #F8FAFC;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.dashboardContainer {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 24px;
+}
+
+
+/* Market Trends Section */
+.marketTrendsSection {
+    grid-column: 1 / 2;
+    background: #3e414d;
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    border: 1px solid #E5E7EB;
+}
+
+.sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.sectionTitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111827;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+}
+
+.sectionControls {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.filterButtons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #F3F4F6;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+    .filterButtons svg {
+        color: #6B7280;
+    }
+
+.buttonGroup {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.filterBtn, .timeBtn {
+    padding: 6px 12px;
+    border: none;
+    background: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    color: #6B7280;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+/* Remove focus outline for all states */
+.filterBtn:focus,
+.filterBtn:focus-visible,
+.filterBtn:focus-within {
+    outline: none;
+    box-shadow: none;
+}
+
+    .timeBtn:focus,
+    .timeBtn:focus-visible,
+    .timeBtn:focus-within {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .filterBtn:hover, timeBtn:hover {
+        background: white;
+        outline: none;
+    }
+
+    .filterBtn:hover {
+        background: white;
+    }
+
+    .filterBtnActive, .timeBtnActive {
+        background: #0f45a8;
+        color: white;
+    }
+    /* Remove focus from active tab too */
+    .chartTabActive:focus,
+    .chartTabActive:focus-visible,
+    .chartTabActive:focus-within {
+        outline: none;
+        box-shadow: none;
+    }
+
+.filterBtnActive:hover, .timeBtnActive:hover {
+    background: #3d90fc;
+}
+
+    .timeButtons {
+        background: white;
+        padding: 4px;
+        border-radius: 8px;
+        border: 1px solid #E5E7EB;
+    }
+    /* Crypto Pairs - No extra space below */
+    .cryptoPairsSection {
+        margin-top: 20px; /* Reduced from 32px */
+    }
+
+    .subsectionTitle {
+        font-size: 16px;
+        font-weight: 600;
+        color: #111827;
+        margin-bottom: 16px;
+    }
+
+    .cryptoPairsGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+
+.cryptoPairCard {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #E5E7EB;
+    transition: all 0.2s ease;
+}
+
+    .cryptoPairCard:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 101, 250, 0.73);
+        border-color: #D1D5DB;
+    }
+
+    .cryptoPairHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 12px;
+    }
+
+    .cryptoPair {
+        font-size: 16px;
+        font-weight: 200;
+        color: black;
+    }
+
+    .cryptoName {
+        font-size: 13px;
+        color: #6B7280;
+        margin-top: 2px;
+        color: black;
+    }
+
+    .changeIndicator {
+        width: 24px;
+        height: 24px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .changeIndicator.positive {
+            background: rgba(16, 185, 129, 0.1);
+            color: #10B981;
+        }
+
+        .changeIndicator.negative {
+            background: rgba(239, 68, 68, 0.1);
+            color: #EF4444;
+        }
+
+    .cryptoPairPrice {
+        font-size: 24px;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 8px;
+    }
+
+    .cryptoPairChange {
+        font-size: 14px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+        .cryptoPairChange.positive {
+            color: #10B981;
+        }
+
+        .cryptoPairChange.negative {
+            color: #EF4444;
+        }
+    /* Three Cards Section */
+    .cardsSection {
+        grid-column: 1 / 2;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+
+    .mainCard {
+        background: white;
+        border-radius: 16px;
+        padding: 24px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        border: 1px solid #E5E7EB;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+        .mainCard:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+    .stockCard {
+        border-top: 4px solid #10B981;
+    }
+
+    .cryptoCard {
+        border-top: 4px solid #3B82F6;
+    }
+
+    .blockchainCard {
+        border-top: 4px solid #8B5CF6;
+    }
+
+    .cardHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 24px;
+    }
+
+    .cardTitle {
+        font-size: 18px;
+        font-weight: 600;
+        color: #111827;
+        margin: 0 0 4px 0;
+    }
+
+    .cardSubtitle {
+        font-size: 13px;
+        color: #6B7280;
+        margin: 0;
+    }
+
+    .cardIcon {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #F8FAFC;
+        border: 1px solid #E5E7EB;
+    }
+
+    .stockCard .cardIcon {
+        background: rgba(16, 185, 129, 0.1);
+        border-color: rgba(16, 185, 129, 0.2);
+        color: #10B981;
+    }
+
+    .cryptoCard .cardIcon {
+        background: rgba(59, 130, 246, 0.1);
+        border-color: rgba(59, 130, 246, 0.2);
+        color: #3B82F6;
+    }
+
+    .blockchainCard .cardIcon {
+        background: rgba(139, 92, 246, 0.1);
+        border-color: rgba(139, 92, 246, 0.2);
+        color: #8B5CF6;
+    }
+
+    .cardContent {
+        flex: 1;
+    }
+
+    .metricRow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+        border-bottom: 1px solid #F3F4F6;
+    }
+
+        .metricRow:last-child {
+            border-bottom: none;
+        }
+
+    .metricInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .cryptoIconContainer {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .cryptoIcon {
+        width: 32px;
+        height: 32px;
+        background: #F3F4F6;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .metricName {
+        font-size: 14px;
+        font-weight: 500;
+        color: #111827;
+    }
+
+    .metricSymbol, .metricLabel {
+        font-size: 12px;
+        color: #6B7280;
+    }
+
+    .metricValues {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 4px;
+    }
+
+    .metricValue {
+        font-size: 16px;
+        font-weight: 600;
+        color: #111827;
+    }
+
+    .metricChange {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+        .metricChange.positive {
+            color: #10B981;
+        }
+
+        .metricChange.negative {
+            color: #EF4444;
+        }
+    /* News Sidebar - Clean API News Layout */
+.newsSidebar {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    background: white;
+    border-radius: 16px;
+    color: black;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    border: 1px solid #E5E7EB;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 24px;
+}
+
+    .newsHeader {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 20px;
+        flex-shrink: 0;
+    }
+
+    .newsTabs {
+        display: flex;
+        gap: 4px;
+        background: #F3F4F6;
+        padding: 4px;
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    .newsTab {
+        flex: 1;
+        padding: 8px 12px;
+        border: none;
+        background: transparent;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 500;
+        color: #6B7280;
+        transition: all 0.2s;
+        text-align: center;
+    }
+
+        .newsTab:hover {
+            background: white;
+        }
+
+    .newsTabActive {
+        background: #4F46E5;
+        color: white;
+    }
+
+        .newsTabActive:hover {
+            background: #4338CA;
+        }
+    /* News Scroll Container */
+    .newsScrollContainer {
+        flex: 1;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-right: 8px;
+    }
+
+        .newsScrollContainer::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .newsScrollContainer::-webkit-scrollbar-track {
+            background: #F1F5F9;
+            border-radius: 3px;
+        }
+
+        .newsScrollContainer::-webkit-scrollbar-thumb {
+            background: #CBD5E1;
+            border-radius: 3px;
+        }
+
+            .newsScrollContainer::-webkit-scrollbar-thumb:hover {
+                background: #94A3B8;
+            }
+    /* News List */
+    .newsList {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .newsCard {
+        background: white;
+        border-radius: 12px;
+        border: 1px solid #E5E7EB;
+        overflow: hidden;
+        transition: all 0.2s ease;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .newsCard:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+            border-color: #D1D5DB;
+        }
+
+    .newsImageContainer {
+        height: 120px;
+        overflow: hidden;
+        background: #F8FAFC;
+    }
+
+    .newsImage {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #F3F4F6, #E5E7EB);
+    }
+
+        .newsImage img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    .newsContent {
+        padding: 16px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .newsMeta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .newsCategory {
+        padding: 4px 12px;
+        border-radius: 12px;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+        .newsCategory[data-category="Stock"] {
+            background: rgba(59, 130, 246, 0.1);
+            color: #1D4ED8;
+        }
+
+        .newsCategory[data-category="Crypto"] {
+            background: rgba(245, 158, 11, 0.1);
+            color: #92400E;
+        }
+
+        .newsCategory[data-category="Blockchain"] {
+            background: rgba(139, 92, 246, 0.1);
+            color: #5B21B6;
+        }
+
+    .newsTime {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 12px;
+        color: #6B7280;
+    }
+
+    .newsTitle {
+        font-size: 16px;
+        font-weight: 600;
+        color: #111827;
+        margin: 0 0 12px 0;
+        line-height: 1.4;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .newsDescription {
+        font-size: 13px;
+        color: #6B7280;
+        margin: 0 0 16px 0;
+        line-height: 1.5;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        flex: 1;
+    }
+
+    .newsFooter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 12px;
+        border-top: 1px solid #F3F4F6;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .sourceInfo {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 13px;
+    }
+
+    .sourceName {
+        font-weight: 600;
+        color: #111827;
+    }
+
+    .author {
+        color: #6B7280;
+        font-size: 12px;
+    }
+
+    .readMore {
+        font-size: 13px;
+        font-weight: 500;
+        color: #4F46E5;
+        text-decoration: none;
+        transition: color 0.2s;
+        white-space: nowrap;
+    }
+
+        .readMore:hover {
+            color: #4338CA;
+            text-decoration: underline;
+        }

@@ -6,13 +6,12 @@
     background: #f7f8fc;
 }
 
-/* Sidebar */
 .sidebar {
     width: 239px;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: #f7f8fc;
     padding: 24px;
     box-sizing: border-box;
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -20,17 +19,19 @@
     position: fixed;
     top: 0;
     left: 0;
-    box-shadow: 0 0 0.3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0.6px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    flex-shrink: 0;
+    overflow-y: auto; 
 }
 
-.sidebar .logo {
-    color: black;
-    font-size: 22px;
-    font-weight: 700;
-    text-decoration: none;
-}
+    .sidebar .logo {
+        color: black;
+        font-size: 22px;
+        font-weight: 700;
+        text-decoration: none;
+    }
 
-/* Sidebar Links */
 .sidebarLinks {
     margin-top: 2rem;
     display: flex;
@@ -45,11 +46,13 @@
     color: black;
     text-decoration: none;
     font-size: 0.95rem;
-    font-weight: 500;
+    font-weight: 50;
     padding: 0.75rem 1rem;
     border-radius: 8px;
+    width: 73%;
     transition: all 0.2s ease;
     gap: 12px;
+    white-space: nowrap;
 }
 
     .sidebarLink:hover {
@@ -57,23 +60,24 @@
         color: #1a90ff !important;
     }
 
-.sidebarLink.active {
-    background-color: #1a90ff !important; 
-    color: white !important;
-    font-weight: 600;
-}
+    .sidebarLink.active {
+        background-color: #1a90ff !important;
+        color: white !important;
+        font-weight: 50;
+    }
 
-.sidebarLink .icon {
-    font-size: 1.1rem;
-    min-width: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    .sidebarLink .icon {
+        font-size: 1.1rem;
+        min-width: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
 
-.sidebarLink.active .icon {
-    color: white !important;
-}
+    .sidebarLink.active .icon {
+        color: white !important;
+    }
 
 .authButtons {
     display: flex;
@@ -85,36 +89,39 @@
 
 .loginLink,
 .signUpLink {
-    padding: 8px;
+    padding: 12px;
     color: white;
     text-decoration: none;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 0.95rem;
-    font-weight: 500;
-    padding: 0.75rem 1rem;
+    font-weight: 300;
     text-align: center;
     border-radius: 8px;
     transition: all 0.2s ease;
-    gap: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
 }
 
 .loginLink {
     background: linear-gradient(to right, #1a1c24, #0f121c);
 }
 
-.loginLink:hover {
-    background: #f2f6fa;
-    border-color: black;
-    color: black;
-}
+    .loginLink:hover {
+        background: #f2f6fa;
+        border-color: black;
+        color: black;
+    }
 
 .signUpLink {
     background: linear-gradient(to right, #0952be);
 }
 
-.signUpLink:hover {
-    background: #f2f6fa;
-    color: black;
- }
+    .signUpLink:hover {
+        background: #f2f6fa;
+        color: black;
+    }
 
 .spacer {
     flex-grow: 1;
@@ -124,7 +131,11 @@
     margin-left: 239px;
     flex: 1;
     height: 100vh;
-    overflow-y: auto;
+    width: calc(100vw - 239px);
+    overflow-y: auto; 
+    overflow-x: hidden;
     padding: 24px;
     background: #f7f8fc;
+    box-sizing: border-box;
+    position: relative;
 }

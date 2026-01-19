@@ -1,0 +1,38 @@
+.marketStats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    background: #1471fc;
+    padding: 16px 20px;
+    border-radius: 12px;
+    border: 1px solid #E5E7EB;
+    margin-bottom: 0;
+}
+
+.statItem {
+    text-align: center;
+    color: white;
+}
+
+.statsRow {
+    color: white;
+}
+
+.statLabel {
+    font-size: 13px;
+    color: white;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.statValue {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.statValuePositive {
+    font-size: 18px;
+    font-weight: 500;
+    color: #10e086;
+}

@@ -10,7 +10,7 @@ export default function AppLayout() {
         <div className={styles.appLayout}>
             {/* Sidebar */ }
             <aside className={styles.sidebar}>
-                <a href="/" className={styles.logo}>DimeBoard</a>
+                <a href="/app" className={styles.logo}>DimeBoard</a>
                     <nav className={styles.sidebarLinks}>
                     <NavLink to="/app" className={({ isActive }) =>
                         isActive ? `${styles.sidebarLink} ${styles.active}` : styles.sidebarLink }>
@@ -41,11 +41,6 @@ export default function AppLayout() {
                             isActive ? `${styles.sidebarLink} ${styles.active}` : styles.sidebarLink }>
                         <FaNewspaper className={styles.icon} />
                         <span>News</span>
-                    </NavLink>
-                    <NavLink to="/watchlist" className={({ isActive }) =>
-                            isActive ? `${styles.sidebarLink} ${styles.active}` : styles.sidebarLink }>
-                        <FaStar className={styles.icon} />
-                        <span>Watchlist</span>
                     </NavLink>
                 </nav>
                 <div className={styles.spacer}></div>

@@ -1,0 +1,82 @@
+/* Header Section */
+.headerSection {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Sans Serif Collection';
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 0;
+    gap: 20px;
+}
+
+.headerLeft {
+    flex: 1;
+}
+
+    .headerLeft .title {
+        font-size: 32px;
+        font-weight: 700;
+        color: #111827;
+        margin: 0 0 8px 0;
+        line-height: 1.2;
+    }
+
+    .headerLeft .subtitle {
+        color: #6B7280;
+        font-size: 14px;
+        margin: 0;
+        font-weight: 500;
+    }
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.portfolioStats {
+    background: white;
+    padding: 16px 24px;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    border: 1px solid #E5E7EB;
+    min-width: 180px;
+}
+
+.portfolioAmount {
+    font-size: 28px;
+    font-weight: 700;
+    color: #111827;
+    line-height: 1.2;
+}
+
+.portfolioChange {
+    font-size: 14px;
+    color: #EF4444;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.refreshBtn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background: #4F46E5;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    height: fit-content;
+}
+
+    .refreshBtn:hover {
+        background: #4338CA;
+        transform: translateY(-1px);
+    }

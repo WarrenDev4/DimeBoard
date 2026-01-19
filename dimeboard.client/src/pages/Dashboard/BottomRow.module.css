@@ -1,0 +1,16 @@
+.dashboardFooter {
+    grid-column: 1 / -1;
+    background: white;
+    border-radius: 16px;
+    padding: 20px 32px;
+    margin-top: 24px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    border: 1px solid #E5E7EB;
+}
+
+.footerCopyright {
+    font-size: 14px;
+    color: #9CA3AF;
+    margin: 0;
+}

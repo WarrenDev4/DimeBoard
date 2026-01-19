@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import landingImage from "../assets/Dimeboard Landing Page.jpg";
-import "../styles/styles.css";
+import landingImage from "../../assets/Dimeboard Landing Page.jpg";
+import "../../styles/styles.css";
 
 function LandingPage() {
     return (
