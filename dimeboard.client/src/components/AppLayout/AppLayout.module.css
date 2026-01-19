@@ -1,0 +1,130 @@
+.appLayout {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: #f7f8fc;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 239px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 24px;
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #f1f1f1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 0.3px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar .logo {
+    color: black;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* Sidebar Links */
+.sidebarLinks {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0;
+}
+
+.sidebarLink {
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    gap: 12px;
+}
+
+    .sidebarLink:hover {
+        background-color: #f0f2f5;
+        color: #1a90ff !important;
+    }
+
+.sidebarLink.active {
+    background-color: #1a90ff !important; 
+    color: white !important;
+    font-weight: 600;
+}
+
+.sidebarLink .icon {
+    font-size: 1.1rem;
+    min-width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebarLink.active .icon {
+    color: white !important;
+}
+
+.authButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: auto;
+    padding-top: 1rem;
+}
+
+.loginLink,
+.signUpLink {
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    text-align: center;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    gap: 12px;
+}
+
+.loginLink {
+    background: linear-gradient(to right, #1a1c24, #0f121c);
+}
+
+.loginLink:hover {
+    background: #f2f6fa;
+    border-color: black;
+    color: black;
+}
+
+.signUpLink {
+    background: linear-gradient(to right, #0952be);
+}
+
+.signUpLink:hover {
+    background: #f2f6fa;
+    color: black;
+ }
+
+.spacer {
+    flex-grow: 1;
+}
+
+.mainContent {
+    margin-left: 239px;
+    flex: 1;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 24px;
+    background: #f7f8fc;
+}

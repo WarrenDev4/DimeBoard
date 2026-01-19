@@ -13,7 +13,7 @@ function LandingPage() {
 
             {/* Hero Section*/ }
             <div className="hero-content fade-in" style={{ animationDelay: "0.4s" }}>
-                <h1>Powering Stocks, Crypto, and Blockchain Analysis with Code and AI</h1>
+                <h1>Powering Stock, Crypto, and Blockchain Analysis with Code and AI</h1>
                 <p>Gain actionable AI-powered analytical market insights with DimeBoard!</p>
 
                 {/* Navigation Section (Start Now, Sign Up, Login) */ }

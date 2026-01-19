@@ -1,3 +1,4 @@
+/* Landing Page */
 .hero {
     position: fixed;
     inset: 0;
@@ -120,4 +121,11 @@
 .fade-in {
     opacity: 0; 
     animation: fadeInUp 1s ease forwards;
+}
+
+/* Dashboard */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
