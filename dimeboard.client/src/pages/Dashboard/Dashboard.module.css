@@ -474,7 +474,6 @@
             .newsScrollContainer::-webkit-scrollbar-thumb:hover {
                 background: #94A3B8;
             }
-    /* News List */
     .newsList {
         display: flex;
         flex-direction: column;

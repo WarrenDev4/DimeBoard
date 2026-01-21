@@ -13,6 +13,8 @@
     <Folder Include="src\components\Charts\" />
     <Folder Include="src\components\general\" />
     <Folder Include="src\components\News\" />
+    <Folder Include="src\pages\Markets\" />
+    <Folder Include="src\pages\Crypto\" />
     <Folder Include="src\services\" />
   </ItemGroup>
 </Project>

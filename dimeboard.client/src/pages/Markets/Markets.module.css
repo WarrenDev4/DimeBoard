@@ -1,0 +1,186 @@
+.marketsPage {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.marketsWrapper {
+    background: #F8FAFC;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.marketsContainer {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+.headerSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: 'Sans Serif Collection';
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.headerLeft {
+    flex: 1;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.marketsControls {
+    display: flex;
+    gap: 12px;
+}
+
+    .marketsControls input,
+    .marketsControls select {
+        padding: 10px 12px;
+        border-radius: 8px;
+        border: 1px solid #e2e8f0;
+    }
+
+
+.marketsControls {
+    display: flex;
+    gap: 12px;
+}
+
+.marketsControls input,
+.marketsControls select {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.marketsOverview {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.overviewCard {
+    background: white;
+    padding: 16px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+.marketsMain {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 20px;
+}
+
+.assetList {
+    background: white;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.assetItem {
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.assetItem:hover {
+    background: #f1f5f9;
+}
+
+.assetDetails {
+    background: white;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.chartBox {
+    height: 240px;
+    background: #f1f5f9;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.statsRow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.stat {
+    background: #f8fafc;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.aiExplanation {
+    background: #f1f5f9;
+    padding: 14px;
+    border-radius: 8px;
+}
+
+.marketsBottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.newsSection,
+.aiInsights {
+    background: white;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.newsCard,
+.aiCard {
+    background: #f8fafc;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.marketsContainer {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.headerSection {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out 0.2s forwards;
+}
+
+.marketsOverview,
+.marketsMain,
+.marketsBottom {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out 0.3s forwards;
+}

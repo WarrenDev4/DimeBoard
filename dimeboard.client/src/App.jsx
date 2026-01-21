@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LandingPage from './pages/LandingPage/LandingPage.jsx';
 import AppLayout from './components/AppLayout/AppLayout.jsx'
 import Dashboard from './pages/Dashboard/Dashboard.jsx';
+import Markets from './pages/Markets/Markets.jsx';
 
 function App() {
     return (
@@ -12,7 +13,8 @@ function App() {
                 {/* Landing Page */}
                 <Route path="/" element={<LandingPage />} />
                 <Route element={<AppLayout />}>
-                    <Route path="/app" element={<Dashboard />} />                    
+                    <Route path="/app" element={<Dashboard />} />
+                    <Route path="/markets" element={<Markets />} /> 
                 </Route>
             </Routes>
         </Router>
