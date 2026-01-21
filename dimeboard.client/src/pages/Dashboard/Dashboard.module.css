@@ -414,7 +414,7 @@
     .newsTabs {
         display: flex;
         gap: 4px;
-        background: #F3F4F6;
+        background: white;
         padding: 4px;
         border-radius: 8px;
         width: 100%;
@@ -424,7 +424,7 @@
         flex: 1;
         padding: 8px 12px;
         border: none;
-        background: transparent;
+        background: black;
         border-radius: 6px;
         cursor: pointer;
         font-size: 13px;
@@ -435,16 +435,19 @@
     }
 
         .newsTab:hover {
-            background: white;
+            background: black;
+            color: white;
         }
 
     .newsTabActive {
-        background: #4F46E5;
+        background: black;
         color: white;
+        border: none;
     }
 
         .newsTabActive:hover {
-            background: #4338CA;
+            background: black;
+            color: white;
         }
   
     .newsScrollContainer {
