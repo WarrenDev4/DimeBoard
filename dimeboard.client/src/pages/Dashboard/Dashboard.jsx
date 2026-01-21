@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { TrendingUp, TrendingDown, Activity, Newspaper, Clock, BarChart3, PieChart, LineChart, Filter } from 'lucide-react';
 
 import styles from "./Dashboard.module.css";
-import headerRow from "./HeaderSection.module.css";
-import chartsRow from "./ChartsRow.module.css";
-import statsRow from "./StatsRow.module.css";
-import bottomRow from "./BottomRow.module.css";
+import headerRow from "./HeaaderSection/HeaderSection.module.css";
+import chartsRow from "./ChartsRow/ChartsRow.module.css";
+import statsRow from "./StatsRow/StatsRow.module.css";
+import bottomRow from "./BottomRow/BottomRow.module.css";
 
 
 export default function Dashboard() {
@@ -403,12 +403,6 @@ export default function Dashboard() {
                         </div>
                     </div>
                 </div>
-
-            
-                <div className={bottomRow.dashboardFooter}>
-                    <p className={bottomRow.footerCopyright}>DimeBoard © 2026 All Rights Reserved</p>
-                </div>
-
             </div>
         </div>
     );
