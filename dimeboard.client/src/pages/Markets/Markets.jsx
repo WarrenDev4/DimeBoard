@@ -1,15 +1,18 @@
-import styles from "./Markets.module.css";
+﻿import styles from "./Markets.module.css";
 
 export default function Markets() {
     return (
         <div className={styles.marketsWrapper}>
             <div className={styles.marketsContainer}>
+
+                {/* Header */}
                 <div className={styles.headerSection}>
                     <div className={styles.headerLeft}>
                         <h1 className={styles.title}>Markets</h1>
                     </div>
-                </div>
-                    <div className={styles.headerRight}>
+
+                    {/* Search */ }
+                    <div className={styles.marketsControls}>
                         <input placeholder="Search asset..." />
                         <select>
                             <option>All</option>
@@ -19,12 +22,17 @@ export default function Markets() {
                         </select>
                     </div>
                 </div>
+
+                {/* Market Overview */}
                 <div className={styles.marketsOverview}>
                     <div className={styles.overviewCard}>AI Market Summary</div>
                     <div className={styles.overviewCard}>Market Sentiment</div>
                     <div className={styles.overviewCard}>Top Movers</div>
                     <div className={styles.overviewCard}>Volatility Index</div>
                 </div>
+
+
+                {/* Markets Main */}
                 <div className={styles.marketsMain}>
                     <div className={styles.assetList}>
                         <h3>Assets</h3>
@@ -33,9 +41,11 @@ export default function Markets() {
                         <div className={styles.assetItem}>AAPL</div>
                         <div className={styles.assetItem}>TSLA</div>
                     </div>
+
                     <div className={styles.assetDetails}>
                         <h3>Asset Details</h3>
                         <div className={styles.chartBox}>Chart Placeholder</div>
+
                         <div className={styles.statsRow}>
                             <div className={styles.stat}>Price</div>
                             <div className={styles.stat}>Volume</div>
@@ -48,6 +58,7 @@ export default function Markets() {
                         </div>
                     </div>
                 </div>
+
                 <div className={styles.marketsBottom}>
                     <div className={styles.newsSection}>
                         <h3>Market News</h3>
@@ -63,7 +74,8 @@ export default function Markets() {
                         <div className={styles.aiCard}>Trend Warnings</div>
                     </div>
                 </div>
+
+            </div>
         </div>
-             
     );
 }

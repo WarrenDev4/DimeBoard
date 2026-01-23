@@ -1,11 +1,11 @@
-.marketsPage {
+﻿.marketsPage {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 32px;
 }
 
 .marketsWrapper {
-    background: #F8FAFC;
+    background: linear-gradient(180deg, #F8FAFC 0%, #F1F5F9 100%);
     min-height: 100vh;
     width: 100%;
     overflow-x: hidden;
@@ -14,10 +14,10 @@
 .marketsContainer {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 24px;
+    padding: 28px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 28px;
 }
 
 
@@ -26,135 +26,185 @@
     justify-content: space-between;
     align-items: flex-start;
     font-family: 'Sans Serif Collection';
-    margin-bottom: 20px;
-    gap: 20px;
-}
-
-.headerLeft {
-    flex: 1;
+    margin-bottom: 12px;
 }
 
 .title {
-    font-size: 32px;
+    font-size: 34px;
     font-weight: 700;
-    color: #111827;
+    letter-spacing: -0.02em;
+    color: #0F172A;
     margin: 0;
-    line-height: 1.2;
+    line-height: 1.15;
 }
 
 .marketsControls {
     display: flex;
-    gap: 12px;
+    gap: 14px;
+    align-items: center;
 }
+    .marketsControls input,
+    .marketsControls select {
+        appearance: none;
+        background: #ffffff;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 10px 14px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #111827;
+        outline: none;
+        min-width: 180px;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+        .marketsControls input::placeholder {
+            color: #9ca3af;
+            font-weight: 400;
+        }
+
+        .marketsControls input:hover,
+        .marketsControls select:hover {
+            border-color: #cbd5f5;
+        }
+
+        .marketsControls input:focus,
+        .marketsControls select:focus {
+            border-color: #6366f1;
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+            background: #ffffff;
+        }
+
+    .marketsControls select {
+        padding-right: 36px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3E%3Cpath stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 12px center;
+        background-size: 18px;
+    }
 
     .marketsControls input,
     .marketsControls select {
-        padding: 10px 12px;
-        border-radius: 8px;
-        border: 1px solid #e2e8f0;
+        backdrop-filter: blur(6px);
     }
-
-
-.marketsControls {
-    display: flex;
-    gap: 12px;
-}
-
-.marketsControls input,
-.marketsControls select {
-    padding: 10px 12px;
-    border-radius: 8px;
-    border: 1px solid #e2e8f0;
-}
 
 .marketsOverview {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
+    gap: 18px;
 }
 
 .overviewCard {
     background: white;
-    padding: 16px;
-    border-radius: 12px;
+    padding: 18px;
+    border-radius: 16px;
     font-weight: 500;
+    border: 1px solid #E5E7EB;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+    .overviewCard:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+
 
 .marketsMain {
     display: grid;
-    grid-template-columns: 260px 1fr;
-    gap: 20px;
+    grid-template-columns: 280px 1fr;
+    gap: 24px;
 }
+
 
 .assetList {
     background: white;
-    padding: 16px;
-    border-radius: 12px;
+    padding: 18px;
+    border-radius: 16px;
+    border: 1px solid #E5E7EB;
 }
 
 .assetItem {
-    padding: 10px;
-    border-radius: 8px;
+    padding: 10px 12px;
+    border-radius: 10px;
     cursor: pointer;
+    font-weight: 500;
+    transition: background 0.15s ease, transform 0.15s ease;
 }
 
-.assetItem:hover {
-    background: #f1f5f9;
-}
+    .assetItem:hover {
+        background: #F1F5F9;
+        transform: translateX(2px);
+    }
+
 
 .assetDetails {
     background: white;
-    padding: 16px;
-    border-radius: 12px;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid #E5E7EB;
 }
 
 .chartBox {
-    height: 240px;
-    background: #f1f5f9;
-    border-radius: 8px;
-    margin-bottom: 16px;
+    height: 260px;
+    background: linear-gradient(135deg, #F1F5F9, #E2E8F0);
+    border-radius: 12px;
+    margin-bottom: 18px;
 }
+
 
 .statsRow {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
-    margin-bottom: 16px;
+    gap: 14px;
+    margin-bottom: 18px;
 }
 
 .stat {
-    background: #f8fafc;
-    padding: 12px;
-    border-radius: 8px;
+    background: #F8FAFC;
+    padding: 14px;
+    border-radius: 12px;
     text-align: center;
+    font-weight: 600;
+    border: 1px solid #E5E7EB;
 }
 
 .aiExplanation {
-    background: #f1f5f9;
-    padding: 14px;
-    border-radius: 8px;
+    background: linear-gradient(180deg, #F8FAFC, #F1F5F9);
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px dashed #CBD5E1;
+    font-size: 14px;
 }
 
 .marketsBottom {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 24px;
 }
 
 .newsSection,
 .aiInsights {
     background: white;
-    padding: 16px;
-    border-radius: 12px;
+    padding: 18px;
+    border-radius: 16px;
+    border: 1px solid #E5E7EB;
 }
+
 
 .newsCard,
 .aiCard {
-    background: #f8fafc;
-    padding: 10px;
-    border-radius: 8px;
-    margin-top: 8px;
+    background: #F8FAFC;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: background 0.15s ease;
 }
+
+    .newsCard:hover,
+    .aiCard:hover {
+        background: #F1F5F9;
+    }
 
 @keyframes fadeInUp {
     from {
@@ -184,3 +234,4 @@
     opacity: 0;
     animation: fadeInUp 0.6s ease-out 0.3s forwards;
 }
+
