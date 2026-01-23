@@ -1,17 +1,17 @@
+import React, { useState } from 'react';
 import styles from "./News.module.css";
 
 export default function News() {
+
+    const filterOptions = ['All', 'Stock', 'Crypto', 'Blockchain'];
+    const [categoryTab, setCategoryTab] = useState('All');
     return (
         <div className={styles.newsWrapper}>
             <div className={styles.newsContainer}>
 
-                {/* Header */}
                 <div className={styles.headerSection}>
                     <div className={styles.headerLeft}>
                         <h1 className={styles.title}>News</h1>
-                        <p className={styles.subtitle}>
-                            Latest stock, crypto, and blockchain updates
-                        </p>
                     </div>
 
                     <div className={styles.newsControls}>
@@ -25,15 +25,20 @@ export default function News() {
                     </div>
                 </div>
 
-                {/* Category Tabs */}
                 <div className={styles.categoryTabs}>
-                    <button className={styles.activeTab}>All</button>
-                    <button>Stocks</button>
-                    <button>Crypto</button>
-                    <button>Blockchain</button>
+           
+                    {filterOptions.map(tab => (
+                        <button
+                            key={tab}
+                            className={`${styles.categoryTab} ${categoryTab === tab ? styles.categoryTabActive : ''}`}
+                            onClick={() => setCategoryTab(tab)}
+                        >
+                            {tab}
+                        </button>
+                    ))}
                 </div>
+            </div>
 
-                {/* News Grid */}
                 <div className={styles.newsGrid}>
 
                     <div className={styles.newsCard}>
@@ -66,6 +71,7 @@ export default function News() {
                         </div>
                     </div>
 
+
                     <div className={styles.newsCard}>
                         <div className={styles.newsImage} />
                         <div className={styles.newsContent}>
@@ -84,6 +90,5 @@ export default function News() {
                 </div>
 
             </div>
-        </div>
     );
 }

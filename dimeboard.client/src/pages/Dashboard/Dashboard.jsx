@@ -129,8 +129,7 @@ export default function Dashboard() {
                                         <button
                                             key={type}
                                             className={`${styles.filterBtn} ${assetType === type ? styles.filterBtnActive : ''}`}
-                                            onClick={() => setAssetType(type)}
-                                        >
+                                            onClick={() => setAssetType(type)}>
                                             {type}
                                         </button>
                                     ))}

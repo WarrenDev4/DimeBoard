@@ -65,25 +65,54 @@
 
 .categoryTabs {
     display: flex;
-    gap: 10px;
+    padding: 8px 14px;
+    gap: 34px;
+    border-radius: 10px;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
-    .categoryTabs button {
-        padding: 8px 14px;
-        border-radius: 10px;
-        border: none;
-        background: #f1f5f9;
-        font-size: 13px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.2s ease;
+.categoryTab {
+    flex: 1;
+    gap: 4px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    color: #6B7280;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+    .categoryTab:hover {
+        background: black;
+        color: white;
     }
 
-        .categoryTabs button:hover {
-            background: #e2e8f0;
-        }
+.categoryTabActive {
+    background: black;
+    color: white;
+    border: none;
+}
+
+    .categoryTabActive:hover {
+        color: white;
+        background: black;
+    }
+
 
 .activeTab {
+    display: flex;
+    gap: 4px;
+    background: white;
+    padding: 4px;
+    border-radius: 8px;
+    width: 100%;
     background: #0f172a !important;
     color: white;
 }
@@ -174,4 +203,10 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.newsCard,
+.categoryTabs {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out 0.3s forwards;
 }
