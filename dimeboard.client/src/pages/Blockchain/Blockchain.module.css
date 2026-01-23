@@ -1,0 +1,230 @@
+.blockchainWrapper {
+    background: #F8FAFC;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.blockchainContainer {
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.headerSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: 'Sans Serif Collection';
+    margin-bottom: 12px;
+}
+
+.headerLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.title {
+    font-size: 34px;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.blockchainControls {
+    display: flex;
+    gap: 12px;
+}
+
+    .blockchainControls input {
+        background: white;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 10px 14px;
+        min-width: 240px;
+        font-size: 14px;
+        outline: none;
+        transition: all 0.25s ease;
+    }
+
+        .blockchainControls input:focus {
+            border-color: #6366f1;
+            box-shadow: 0 0 0 3px rgba(99,102,241,0.15);
+        }
+
+    .blockchainControls select {
+        background: white;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 10px 14px;
+        font-size: 14px;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.25s ease;
+    }
+
+.blockchainControls select:hover {
+    border-color: #cbd5e1;
+}
+
+.blockchainControls input::placeholder {
+    color: #9ca3af;
+    font-weight: 400;
+}
+
+.blockcahinControls input:hover,
+.marketsControls select:hover {
+    border-color: #cbd5f5;
+}
+
+.blockchainControls input:focus,
+.blockchainControls select:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+    background: #ffffff;
+}
+
+.blockchainOverview {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.overviewCard {
+    background: linear-gradient(180deg, #ffffff, #f9fafb);
+    border-radius: 16px;
+    padding: 18px;
+    font-weight: 600;
+    border: 1px solid #E5E7EB;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .overviewCard:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+
+.blockchainMain {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 22px;
+}
+
+.networkList {
+    background: white;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+}
+
+.networkItem {
+    padding: 10px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+    .networkItem:hover {
+        background: #eef2ff;
+        transform: translateX(4px);
+    }
+
+.networkDetails {
+    background: white;
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+}
+
+.chartBox {
+    height: 260px;
+    background: linear-gradient(180deg, #eef2ff, #e0e7ff);
+    border-radius: 12px;
+    margin-bottom: 18px;
+}
+
+.statsRow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.stat {
+    background: #f8fafc;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.aiPanel {
+    background: linear-gradient(180deg, #eef2ff, #e0e7ff);
+    border-radius: 12px;
+    padding: 14px;
+}
+
+    .aiPanel h4 {
+        margin: 0 0 6px 0;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .aiPanel p {
+        margin: 0;
+        font-size: 13px;
+        color: #4338ca;
+    }
+
+.blockchainBottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+.protocolSection,
+.aiInsights {
+    background: white;
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+}
+
+.protocolCard,
+.aiCard {
+    background: #f8fafc;
+    border-radius: 10px;
+    padding: 10px 12px;
+    margin-top: 10px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+    .protocolCard:hover,
+    .aiCard:hover {
+        background: #eef2ff;
+    }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

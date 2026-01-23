@@ -1,0 +1,177 @@
+.newsWrapper {
+    background: #F8FAFC;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.newsContainer {
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.headerSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: 'Sans Serif Collection';
+    margin-bottom: 12px;
+}
+
+.headerLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.title {
+    font-size: 34px;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.newsControls {
+    display: flex;
+    gap: 12px;
+}
+
+    .newsControls input,
+    .newsControls select {
+        background: white;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 10px 14px;
+        font-size: 14px;
+        outline: none;
+        transition: all 0.25s ease;
+    }
+
+        .newsControls input:focus,
+        .newsControls select:focus {
+            border-color: #6366f1;
+            box-shadow: 0 0 0 3px rgba(99,102,241,0.15);
+        }
+
+.categoryTabs {
+    display: flex;
+    gap: 10px;
+}
+
+    .categoryTabs button {
+        padding: 8px 14px;
+        border-radius: 10px;
+        border: none;
+        background: #f1f5f9;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+        .categoryTabs button:hover {
+            background: #e2e8f0;
+        }
+
+.activeTab {
+    background: #0f172a !important;
+    color: white;
+}
+
+.newsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 20px;
+}
+
+.newsCard {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .newsCard:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    }
+
+.newsImage {
+    height: 160px;
+    background: linear-gradient(135deg, #e0e7ff, #f8fafc);
+}
+
+.newsContent {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+    .newsContent h3 {
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0;
+        color: #0f172a;
+    }
+
+    .newsContent p {
+        font-size: 13px;
+        color: #475569;
+        margin: 0;
+    }
+
+
+.tag {
+    width: fit-content;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+    .tag[data-type="Stock"] {
+        background: rgba(59,130,246,0.15);
+        color: #2563eb;
+    }
+
+    .tag[data-type="Crypto"] {
+        background: rgba(245,158,11,0.15);
+        color: #d97706;
+    }
+
+    .tag[data-type="Blockchain"] {
+        background: rgba(139,92,246,0.15);
+        color: #7c3aed;
+    }
+
+.newsMeta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #64748b;
+    margin-top: 6px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
