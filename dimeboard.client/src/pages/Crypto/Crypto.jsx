@@ -69,9 +69,9 @@ export default function Crypto() {
 
                     <div className={styles.newsSection}>
                         <h3>Crypto News</h3>
-                        <div className={styles.newsCard}>Bitcoin ETF inflows surge</div>
-                        <div className={styles.newsCard}>Ethereum scaling update</div>
-                        <div className={styles.newsCard}>DeFi protocol exploit analysis</div>
+                        <div className={styles.newsCard}>N/A</div>
+                        <div className={styles.newsCard}>N/A</div>
+                        <div className={styles.newsCard}>N/A</div>
                     </div>
 
                     <div className={styles.aiInsights}>
