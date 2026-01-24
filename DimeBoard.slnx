@@ -4,4 +4,5 @@
     <Deploy />
   </Project>
   <Project Path="DimeBoard.Server/DimeBoard.Server.csproj" />
+  <Project Path="DimeBoardDashboard.Api/DimeBoardDashboard.Api.csproj" />
 </Solution>
