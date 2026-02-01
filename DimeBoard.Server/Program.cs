@@ -1,9 +1,21 @@
 using Microsoft.OpenApi;
+using dotenv.net;
 
+DotEnv.Load();
 var builder = WebApplication.CreateBuilder(args);
 
+var finnhubApi = builder.Configuration["FINNHUB_API"];
+var moralisApi  = builder.Configuration["MORALIS_API"];
+var openAIApi = builder.Configuration["OPEN_API_KEY"];
+
+// Services
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddHttpClient();
+
+builder.Services.AddScoped<FinnhubService>();
+builder.Services.AddScoped<DashboardService>();
+
 builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new OpenApiInfo
@@ -16,6 +28,7 @@ builder.Services.AddSwaggerGen(options =>
 
 var app = builder.Build();
 
+// Middleware
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
