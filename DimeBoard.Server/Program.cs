@@ -8,7 +8,7 @@ var finnhubApi = builder.Configuration["FINNHUB_API"];
 var moralisApi  = builder.Configuration["MORALIS_API"];
 var openAIApi = builder.Configuration["OPEN_API_KEY"];
 
-// Services
+// Services //
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddHttpClient();
