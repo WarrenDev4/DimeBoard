@@ -1,1 +1,17 @@
 <img width="1995" height="1030" alt="DimeBoard Logo" src="https://github.com/user-attachments/assets/afd8e2c9-ab90-4520-b724-f53ee9ab5356" />
+DimeBoard is an AI-powered Stock, Crypto, and Blockchain analytics platform designed to transform complex financial data into actionable insights. The system aggregates real-time and historical market data, applies artificial intelligence for predictive analysis, and provides advanced visualization tools for traders, investors, and analysts.
+
+**Tools being used for this project:**
+
+- `ASP.NET Core` – serves as the backend API layer of the application. It handles business logic, processes incoming HTTP requests from the React frontend, integrates with external services like financial APIs and the HuggingFace API, and communicates with MS SQL Server for persistent data storage. It also manages dependency injection, configuration, authentication (if implemented), and security. This layer acts as the central orchestrator of the entire system.
+- `React.js` – serves as the backend API layer of the application. It handles business logic, processes incoming HTTP requests from the React frontend, integrates with external services like financial APIs and the HuggingFace API, and communicates with MS SQL Server for persistent data storage. It also manages dependency injection, configuration, authentication (if implemented), and security. This layer acts as the central orchestrator of the entire system
+- `Microsoft SQL Server` – provides persistent data storage for the application. It stores user accounts, portfolio data, watchlists, transaction history, and any cached AI results. The database is accessed exclusively through the ASP.NET Core backend, ensuring data integrity, validation, and security. This separation ensures that sensitive data is never exposed directly to the frontend.
+- `Node.js` –  supports server-side logic through Next.js API routes and server actions. It handles authentication workflows, request validation, data processing, and communication with Firebase and AI services, ensuring scalable and efficient backend operations.
+- `Azure` - provides persistent data storage for the application. It stores user accounts, portfolio data, watchlists, transaction history, and any cached AI results. The database is accessed exclusively through the ASP.NET Core backend, ensuring data integrity, validation, and security. This separation ensures that sensitive data is never exposed directly to the frontend.
+- `Swagger` - is used for automatic API documentation and endpoint testing. It generates interactive documentation for all ASP.NET Core controllers, allowing developers to test endpoints directly from the browser. Swagger improves development efficiency, simplifies debugging, and provides clear documentation of request and response structures
+- `HuggingFace API` – provides AI-powered capabilities within the application. It is used to perform tasks such as sentiment analysis, text classification, or summarization on financial news and market data. The ASP.NET Core backend sends text data to HuggingFace, processes the AI response, and returns structured insights to the frontend for display in the dashboard.
+
+**Landing Page**
+
+This is the landing page that users will enter once starting the platform.
+<img width="1918" height="867" alt="DimeBoard Landing" src="https://github.com/user-attachments/assets/2be6650d-0d56-4bcd-9347-a70615d4e9af" />
