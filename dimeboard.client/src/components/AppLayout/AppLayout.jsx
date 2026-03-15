@@ -2,6 +2,7 @@ import { Outlet, NavLink } from "react-router-dom";
 import styles from "./AppLayout.module.css";
 import { FaChartBar, FaNewspaper, FaStar, FaLink, FaRobot } from "react-icons/fa";
 import { MdDashboard } from "react-icons/md";
+import logo from "../../assets/DimeBoard Logo.png";
 import { RiBitCoinLine } from "react-icons/ri";
 import { BsGraphUp } from "react-icons/bs";
 
@@ -10,7 +11,9 @@ export default function AppLayout() {
         <div className={styles.appLayout}>
             {/* Sidebar */ }
             <aside className={styles.sidebar}>
-                <a href="/app" className={styles.logo}>DimeBoard</a>
+                <a href="/app" className={styles.logo}>
+                    <img src={logo} alt="DimeBoard Logo" className={styles.logoImage} />
+                </a>
                     <nav className={styles.sidebarLinks}>
                     <NavLink to="/app" className={({ isActive }) =>
                         isActive ? `${styles.sidebarLink} ${styles.active}` : styles.sidebarLink }>

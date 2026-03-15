@@ -14,10 +14,8 @@
     gap: 24px;
 }
 
-
 .marketTrendsSection {
     grid-column: 1 / 2;
-    background: #3e414d;
     background: white;
     border-radius: 16px;
     padding: 24px;
@@ -37,7 +35,6 @@
 .sectionTitle {
     font-size: 20px;
     font-weight: 600;
-    color: #111827;
     color: black;
     display: flex;
     align-items: center;
@@ -84,14 +81,9 @@
     white-space: nowrap;
 }
 
-
-.filterBtn:focus,
-.filterBtn:focus-visible,
-.filterBtn:focus-within {
-    outline: none;
-    box-shadow: none;
-}
-
+    .filterBtn:focus,
+    .filterBtn:focus-visible,
+    .filterBtn:focus-within,
     .timeBtn:focus,
     .timeBtn:focus-visible,
     .timeBtn:focus-within {
@@ -99,54 +91,49 @@
         box-shadow: none;
     }
 
-    .filterBtn:hover, timeBtn:hover {
-        background: white;
-        outline: none;
-    }
-
     .filterBtn:hover {
         background: white;
     }
 
-    .filterBtnActive, .timeBtnActive {
-        background: #0f45a8;
-        color: white;
-    }
-
-    .chartTabActive:focus,
-    .chartTabActive:focus-visible,
-    .chartTabActive:focus-within {
-        outline: none;
-        box-shadow: none;
-    }
-
-.filterBtnActive:hover, .timeBtnActive:hover {
-    background: #3d90fc;
+.filterBtnActive, .timeBtnActive {
+    background: #0f45a8;
+    color: white;
 }
 
-    .timeButtons {
-        background: white;
-        padding: 4px;
-        border-radius: 8px;
-        border: 1px solid #E5E7EB;
-    }
-    
-    .cryptoPairsSection {
-        margin-top: 20px; 
+    .filterBtnActive:hover, .timeBtnActive:hover {
+        background: #3d90fc;
     }
 
-    .subsectionTitle {
-        font-size: 16px;
-        font-weight: 600;
-        color: #111827;
-        margin-bottom: 16px;
-    }
+.chartTabActive:focus,
+.chartTabActive:focus-visible,
+.chartTabActive:focus-within {
+    outline: none;
+    box-shadow: none;
+}
 
-    .cryptoPairsGrid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 16px;
-    }
+.timeButtons {
+    background: white;
+    padding: 4px;
+    border-radius: 8px;
+    border: 1px solid #E5E7EB;
+}
+
+.cryptoPairsSection {
+    margin-top: 20px;
+}
+
+.subsectionTitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 16px;
+}
+
+.cryptoPairsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
 
 .cryptoPairCard {
     background: white;
@@ -162,230 +149,229 @@
         border-color: #D1D5DB;
     }
 
-    .cryptoPairHeader {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-bottom: 12px;
-    }
+.cryptoPairHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
 
-    .cryptoPair {
-        font-size: 16px;
-        font-weight: 200;
-        color: black;
-    }
+.cryptoPair {
+    font-size: 16px;
+    font-weight: 200;
+    color: black;
+}
 
-    .cryptoName {
-        font-size: 13px;
-        color: #6B7280;
-        margin-top: 2px;
-        color: black;
-    }
+.cryptoName {
+    font-size: 13px;
+    color: black;
+    margin-top: 2px;
+}
 
-    .changeIndicator {
-        width: 24px;
-        height: 24px;
-        border-radius: 6px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+.changeIndicator {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        .changeIndicator.positive {
-            background: rgba(16, 185, 129, 0.1);
-            color: #10B981;
-        }
-
-        .changeIndicator.negative {
-            background: rgba(239, 68, 68, 0.1);
-            color: #EF4444;
-        }
-
-    .cryptoPairPrice {
-        font-size: 24px;
-        font-weight: 700;
-        color: white;
-        margin-bottom: 8px;
-    }
-
-    .cryptoPairChange {
-        font-size: 14px;
-        font-weight: 600;
-        display: flex;
-        align-items: center;
-        gap: 4px;
-    }
-
-        .cryptoPairChange.positive {
-            color: #10B981;
-        }
-
-        .cryptoPairChange.negative {
-            color: #EF4444;
-        }
-
-    .cardsSection {
-        grid-column: 1 / 2;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 24px;
-    }
-
-    .mainCard {
-        background: white;
-        border-radius: 16px;
-        padding: 24px;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-        border: 1px solid #E5E7EB;
-        display: flex;
-        flex-direction: column;
-        height: fit-content;
-    }
-
-        .mainCard:hover {
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-
-    .stockCard {
-        border-top: 4px solid #10B981;
-    }
-
-    .cryptoCard {
-        border-top: 4px solid #3B82F6;
-    }
-
-    .blockchainCard {
-        border-top: 4px solid #8B5CF6;
-    }
-
-    .cardHeader {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-bottom: 24px;
-    }
-
-    .cardTitle {
-        font-size: 18px;
-        font-weight: 600;
-        color: #111827;
-        margin: 0 0 4px 0;
-    }
-
-    .cardSubtitle {
-        font-size: 13px;
-        color: #6B7280;
-        margin: 0;
-    }
-
-    .cardIcon {
-        width: 48px;
-        height: 48px;
-        border-radius: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: #F8FAFC;
-        border: 1px solid #E5E7EB;
-    }
-
-    .stockCard .cardIcon {
+    .changeIndicator.positive {
         background: rgba(16, 185, 129, 0.1);
-        border-color: rgba(16, 185, 129, 0.2);
         color: #10B981;
     }
 
-    .cryptoCard .cardIcon {
-        background: rgba(59, 130, 246, 0.1);
-        border-color: rgba(59, 130, 246, 0.2);
-        color: #3B82F6;
+    .changeIndicator.negative {
+        background: rgba(239, 68, 68, 0.1);
+        color: #EF4444;
     }
 
-    .blockchainCard .cardIcon {
-        background: rgba(139, 92, 246, 0.1);
-        border-color: rgba(139, 92, 246, 0.2);
-        color: #8B5CF6;
+.cryptoPairPrice {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.cryptoPairChange {
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+    .cryptoPairChange.positive {
+        color: #10B981;
     }
 
-    .cardContent {
-        flex: 1;
+    .cryptoPairChange.negative {
+        color: #EF4444;
     }
 
-    .metricRow {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 16px 0;
-        border-bottom: 1px solid #F3F4F6;
+.cardsSection {
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.mainCard {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    border: 1px solid #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+    .mainCard:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
-        .metricRow:last-child {
-            border-bottom: none;
-        }
+.stockCard {
+    border-top: 4px solid #10B981;
+}
 
-    .metricInfo {
-        display: flex;
-        flex-direction: column;
-        gap: 2px;
+.cryptoCard {
+    border-top: 4px solid #3B82F6;
+}
+
+.blockchainCard {
+    border-top: 4px solid #8B5CF6;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.cardTitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111827;
+    margin: 0 0 4px 0;
+}
+
+.cardSubtitle {
+    font-size: 13px;
+    color: #6B7280;
+    margin: 0;
+}
+
+.cardIcon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F8FAFC;
+    border: 1px solid #E5E7EB;
+}
+
+.stockCard .cardIcon {
+    background: rgba(16, 185, 129, 0.1);
+    border-color: rgba(16, 185, 129, 0.2);
+    color: #10B981;
+}
+
+.cryptoCard .cardIcon {
+    background: rgba(59, 130, 246, 0.1);
+    border-color: rgba(59, 130, 246, 0.2);
+    color: #3B82F6;
+}
+
+.blockchainCard .cardIcon {
+    background: rgba(139, 92, 246, 0.1);
+    border-color: rgba(139, 92, 246, 0.2);
+    color: #8B5CF6;
+}
+
+.cardContent {
+    flex: 1;
+}
+
+.metricRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid #F3F4F6;
+}
+
+    .metricRow:last-child {
+        border-bottom: none;
     }
 
-    .cryptoIconContainer {
-        display: flex;
-        align-items: center;
-        gap: 12px;
+.metricInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.cryptoIconContainer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cryptoIcon {
+    width: 32px;
+    height: 32px;
+    background: #F3F4F6;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.metricName {
+    font-size: 14px;
+    font-weight: 500;
+    color: #111827;
+}
+
+.metricSymbol, .metricLabel {
+    font-size: 12px;
+    color: #6B7280;
+}
+
+.metricValues {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.metricValue {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+}
+
+.metricChange {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+    .metricChange.positive {
+        color: #10B981;
     }
 
-    .cryptoIcon {
-        width: 32px;
-        height: 32px;
-        background: #F3F4F6;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 600;
-        font-size: 14px;
+    .metricChange.negative {
+        color: #EF4444;
     }
-
-    .metricName {
-        font-size: 14px;
-        font-weight: 500;
-        color: #111827;
-    }
-
-    .metricSymbol, .metricLabel {
-        font-size: 12px;
-        color: #6B7280;
-    }
-
-    .metricValues {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 4px;
-    }
-
-    .metricValue {
-        font-size: 16px;
-        font-weight: 600;
-        color: #111827;
-    }
-
-    .metricChange {
-        display: flex;
-        align-items: center;
-        gap: 4px;
-        font-size: 13px;
-        font-weight: 500;
-    }
-
-        .metricChange.positive {
-            color: #10B981;
-        }
-
-        .metricChange.negative {
-            color: #EF4444;
-        }
 
 .newsSidebar {
     grid-column: 2 / 3;
@@ -403,232 +389,239 @@
     top: 24px;
 }
 
-    .newsHeader {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        margin-bottom: 20px;
-        flex-shrink: 0;
-    }
+.newsHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
 
-    .newsTabs {
-        display: flex;
-        gap: 4px;
-        background: white;
-        padding: 4px;
-        border-radius: 8px;
-        width: 100%;
-    }
+.newsTabs {
+    display: flex;
+    gap: 4px;
+    background: white;
+    padding: 4px;
+    border-radius: 8px;
+    width: 100%;
+}
 
-    .newsTab {
-        flex: 1;
-        padding: 8px 12px;
-        border: none;
-        background: black;
-        border-radius: 6px;
-        cursor: pointer;
-        font-size: 13px;
-        font-weight: 500;
-        color: #6B7280;
-        transition: all 0.2s;
-        text-align: center;
-    }
+.newsTab {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    background: black;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    color: #6B7280;
+    transition: all 0.2s;
+    text-align: center;
+}
 
-        .newsTab:hover {
-            background: black;
-            color: white;
-        }
-
-    .newsTabActive {
+    .newsTab:hover {
         background: black;
         color: white;
-        border: none;
     }
 
-        .newsTabActive:hover {
-            background: black;
-            color: white;
-        }
-  
-    .newsScrollContainer {
-        flex: 1;
-        overflow-y: auto;
-        overflow-x: hidden;
-        padding-right: 8px;
+.newsTabActive {
+    background: black;
+    color: white;
+    border: none;
+}
+
+    .newsTabActive:hover {
+        background: black;
+        color: white;
     }
 
-        .newsScrollContainer::-webkit-scrollbar {
-            width: 6px;
-        }
+.newsScrollContainer {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 8px;
+}
 
-        .newsScrollContainer::-webkit-scrollbar-track {
-            background: #F1F5F9;
-            border-radius: 3px;
-        }
-
-        .newsScrollContainer::-webkit-scrollbar-thumb {
-            background: #CBD5E1;
-            border-radius: 3px;
-        }
-
-            .newsScrollContainer::-webkit-scrollbar-thumb:hover {
-                background: #94A3B8;
-            }
-    .newsList {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
+    .newsScrollContainer::-webkit-scrollbar {
+        width: 6px;
     }
 
-    .newsCard {
-        background: white;
-        border-radius: 12px;
-        border: 1px solid #E5E7EB;
-        overflow: hidden;
-        transition: all 0.2s ease;
-        display: flex;
-        flex-direction: column;
+    .newsScrollContainer::-webkit-scrollbar-track {
+        background: #F1F5F9;
+        border-radius: 3px;
     }
 
-        .newsCard:hover {
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            transform: translateY(-2px);
-            border-color: #D1D5DB;
+    .newsScrollContainer::-webkit-scrollbar-thumb {
+        background: #CBD5E1;
+        border-radius: 3px;
+    }
+
+        .newsScrollContainer::-webkit-scrollbar-thumb:hover {
+            background: #94A3B8;
         }
 
-    .newsImageContainer {
-        height: 120px;
-        overflow: hidden;
-        background: #F8FAFC;
+.newsList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.newsCard {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #E5E7EB;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+    .newsCard:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+        border-color: #D1D5DB;
     }
 
-    .newsImage {
+.newsImageContainer {
+    width: 80px;
+    height: 70px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #F1F5F9;
+}
+
+    .newsImageContainer img {
         width: 100%;
         height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: linear-gradient(135deg, #F3F4F6, #E5E7EB);
+        object-fit: cover;
+        display: block;
     }
 
-        .newsImage img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+.newsContent {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0;
+}
 
-    .newsContent {
-        padding: 16px;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
+.newsMeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 4px;
+}
+
+.newsCategory {
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+    .newsCategory[data-category="Stock"] {
+        background: rgba(59, 130, 246, 0.93);
+        color: white;
     }
 
-    .newsMeta {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 12px;
-        flex-wrap: wrap;
-        gap: 8px;
+    .newsCategory[data-category="Crypto"] {
+        background: rgba(245, 178, 7, 0.89);
+        color: white;
     }
 
-    .newsCategory {
-        padding: 4px 12px;
-        border-radius: 12px;
-        font-size: 12px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
+    .newsCategory[data-category="Blockchain"] {
+        background: rgba(90, 23, 246, 0.84);
+        color: white;
     }
 
-        .newsCategory[data-category="Stock"] {
-            background: rgba(59, 130, 246, 0.93);
-            color: white;
-        }
+.newsTime {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 11px;
+    color: #6B7280;
+}
 
-        .newsCategory[data-category="Crypto"] {
-            background: rgba(245, 178, 7, 0.89);
-            color: white;
-        }
+.newsTitle {
+    font-size: 12px;
+    font-weight: 600;
+    color: #0F172A;
+    line-height: 1.4;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 
-        .newsCategory[data-category="Blockchain"] {
-            background: rgba(90, 23, 246, 0.84);
-            color: white;
-        }
+.newsDescription {
+    font-size: 11px;
+    color: #64748B;
+    line-height: 1.4;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 
-    .newsTime {
-        display: flex;
-        align-items: center;
-        gap: 4px;
-        font-size: 12px;
-        color: #6B7280;
+.newsFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4px;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.sourceInfo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 11px;
+}
+
+.sourceName {
+    font-weight: 600;
+    color: #111827;
+}
+
+.author {
+    color: #6B7280;
+    font-size: 11px;
+}
+
+.readMore {
+    font-size: 11px;
+    font-weight: 500;
+    color: #4F46E5;
+    text-decoration: none;
+    transition: color 0.2s;
+    white-space: nowrap;
+}
+
+    .readMore:hover {
+        color: #4338CA;
+        text-decoration: underline;
     }
 
-    .newsTitle {
-        font-size: 16px;
-        font-weight: 600;
-        color: #111827;
-        margin: 0 0 12px 0;
-        line-height: 1.4;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-    }
+.positive {
+    color: #10B981;
+}
 
-    .newsDescription {
-        font-size: 13px;
-        color: #6B7280;
-        margin: 0 0 16px 0;
-        line-height: 1.5;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        flex: 1;
-    }
-
-    .newsFooter {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 12px;
-        border-top: 1px solid #F3F4F6;
-        flex-wrap: wrap;
-        gap: 8px;
-    }
-
-    .sourceInfo {
-        display: flex;
-        align-items: center;
-        gap: 4px;
-        font-size: 13px;
-    }
-
-    .sourceName {
-        font-weight: 600;
-        color: #111827;
-    }
-
-    .author {
-        color: #6B7280;
-        font-size: 12px;
-    }
-
-    .readMore {
-        font-size: 13px;
-        font-weight: 500;
-        color: #4F46E5;
-        text-decoration: none;
-        transition: color 0.2s;
-        white-space: nowrap;
-    }
-
-        .readMore:hover {
-            color: #4338CA;
-            text-decoration: underline;
-        }
+.negative {
+    color: #EF4444;
+}
 
 @keyframes fadeInUp {
     from {
@@ -657,7 +650,6 @@
     animation: fadeInUp 0.6s ease-out 0.3s forwards;
 }
 
-
 .mainCard {
     opacity: 0;
     animation: fadeInUp 0.6s ease-out forwards;
@@ -679,35 +671,6 @@
     opacity: 0;
     animation: fadeInUp 0.6s ease-out 0.7s forwards;
 }
-
-.newsCard {
-    opacity: 0;
-    animation: fadeInUp 0.5s ease-out forwards;
-}
-
-    .newsCard:nth-child(1) {
-        animation-delay: 0.8s;
-    }
-
-    .newsCard:nth-child(2) {
-        animation-delay: 0.9s;
-    }
-
-    .newsCard:nth-child(3) {
-        animation-delay: 1.0s;
-    }
-
-    .newsCard:nth-child(4) {
-        animation-delay: 1.1s;
-    }
-
-    .newsCard:nth-child(5) {
-        animation-delay: 1.2s;
-    }
-
-    .newsCard:nth-child(6) {
-        animation-delay: 1.3s;
-    }
 
 .dashboardFooter {
     opacity: 0;

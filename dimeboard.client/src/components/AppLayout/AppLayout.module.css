@@ -25,15 +25,13 @@
     overflow-y: auto; 
 }
 
-    .sidebar .logo {
-        color: black;
-        font-size: 22px;
-        font-weight: 700;
-        text-decoration: none;
+    .sidebar .logoImage {
+        width: 180px;
+        height: 90px;
     }
 
 .sidebarLinks {
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;

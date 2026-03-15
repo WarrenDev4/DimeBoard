@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import landingImage from "../../assets/Dimeboard Landing Page.jpg";
+import logo from "../../assets/DimeBoard Logo (White).png";
 import "../../styles/styles.css";
 
 function LandingPage() {
@@ -8,7 +9,7 @@ function LandingPage() {
         <section className="hero" style={{ backgroundImage: `url(${landingImage})` }}>
             {/* Logo Section */ }
             <div className="hero-top fade-in" style={{ animationDelay: "0.2s" }}>
-                <h2 className="logo">DimeBoard</h2>
+                <img src={logo} alt="DimeBoard Logo" style={{ height: "120px", width: "237px" }}/>
             </div>
 
             {/* Hero Section*/ }

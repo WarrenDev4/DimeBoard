@@ -15,8 +15,8 @@
 }
 
 .logo {
-    font-size: 26px;
-    font-weight: bold;
+    height: clamp(50px, 8vw, 90px);
+    width: auto;
 }
 
 .hero-content {

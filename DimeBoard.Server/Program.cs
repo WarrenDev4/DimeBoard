@@ -1,46 +1,53 @@
-using Microsoft.OpenApi;
-using dotenv.net;
+﻿using dotenv.net;
 
 DotEnv.Load();
+
 var builder = WebApplication.CreateBuilder(args);
 
-var finnhubApi = builder.Configuration["FINNHUB_API"];
-var moralisApi  = builder.Configuration["MORALIS_API"];
-var openAIApi = builder.Configuration["OPEN_API_KEY"];
+builder.Configuration.AddEnvironmentVariables();
 
-// Services //
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(opts =>
+    {
+        opts.JsonSerializerOptions.PropertyNamingPolicy =
+            System.Text.Json.JsonNamingPolicy.CamelCase;
+    });
+
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddHttpClient();
 
-builder.Services.AddScoped<FinnhubService>();
+builder.Services.AddHttpClient<FinnhubService>();
+builder.Services.AddHttpClient<MoralisService>();
+
 builder.Services.AddScoped<DashboardService>();
 
-builder.Services.AddSwaggerGen(options =>
+builder.Services.AddCors(options =>
 {
-    options.SwaggerDoc("v1", new OpenApiInfo
+    options.AddPolicy("ReactDev", policy =>
     {
-        Title = "My API for DimeBoard",
-        Version = "v1",
-        Description = "The API for DimeBoard."
+        policy
+            .WithOrigins(
+                "http://localhost:3000",
+                "http://localhost:5173",
+                "https://localhost:3000",
+                "https://localhost:5173",
+                "https://localhost:49902",  
+                "http://localhost:49902"
+            )
+            .AllowAnyHeader()
+            .AllowAnyMethod();
     });
 });
 
 var app = builder.Build();
 
-// Middleware
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-    });
+    app.UseDeveloperExceptionPage();
 }
 
-app.UseHttpsRedirection();
+app.UseRouting();
+app.UseCors("ReactDev"); 
 app.UseAuthorization();
-
 app.MapControllers();
 
-app.Run();
+app.Run("http://localhost:49901");
