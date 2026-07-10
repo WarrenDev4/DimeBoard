@@ -41,7 +41,7 @@ This is the landing page that users will enter once starting the platform.
 
 **AI Insights Page**
 
-<img width="1898" height="871" alt="DimeBoard AI Insights" src="https://github.com/user-attachments/assets/3d6faf18-78c8-490e-ac12-4403d149b3a6" />
+<img width="1898" height="871" alt="DimeBoard AI Insights" src="https://github.com/user-attachments/assets/3d6faf18-78c8-490e-ac12-4403d149b3a6" /> 
 
 
 
