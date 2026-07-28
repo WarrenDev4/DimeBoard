@@ -1,5 +1,5 @@
 <img width="1995" height="1030" alt="DimeBoard Logo" src="https://github.com/user-attachments/assets/afd8e2c9-ab90-4520-b724-f53ee9ab5356" />
-DimeBoard is an upcoming AI-powered Stock, Crypto, and Blockchain analytics platform designed to transform complex financial data into actionable insights. The system aggregates real-time and historical market data, applies artificial intelligence for predictive analysis, and provides advanced visualization tools for traders, investors, and analysts.
+DimeBoard is an upcoming AI-powered Stock, Crypto, and Blockchain analytics platform designed to transform complex financial data into actionable insights. The system aggregates real-time and historical market data, applies artificial intelligence for predictive analysis.
 
 **DISCLAIMER (PLEASE READ THOROUGHLY): I am not a Stock, Cryptocurreny, or Blockchain professional or expert. This is only a software project. Please do NOT use this for ANY Stock, Cryptocurreny, or Blockchain decisions. Take this as a fun project**
 
