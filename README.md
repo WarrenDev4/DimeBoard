@@ -1,12 +1,7 @@
 <img width="1995" height="1030" alt="DimeBoard Logo" src="https://github.com/user-attachments/assets/afd8e2c9-ab90-4520-b724-f53ee9ab5356" />
-DimeBoard is an AI-powered Stock, Crypto, and Blockchain analytics platform designed to transform complex financial data into actionable insights. The system aggregates real-time and historical market data, applies artificial intelligence for predictive analysis, and provides advanced visualization tools for traders, investors, and analysts.
-Tools being used for this project:
-
-**Updated tools to be used:** ASP.NET Core, React, TypeScript, Tailwind CSS, Plotly.js, D3.js, Socket.io, WebSocket, SignalR, Entity Framework, Swagger, Kestrel, Azure, MSSQL Server, Azure SQL Database, FastAPI, Pandas, NumPy NumPy, Poetry, VSCode.
+DimeBoard is an upcoming AI-powered Stock, Crypto, and Blockchain analytics platform designed to transform complex financial data into actionable insights. The system aggregates real-time and historical market data, applies artificial intelligence for predictive analysis, and provides advanced visualization tools for traders, investors, and analysts.
 
 **DISCLAIMER (PLEASE READ THOROUGHLY): I am not a Stock, Cryptocurreny, or Blockchain professional or expert. This is only a software project. Please do NOT use this for ANY Stock, Cryptocurreny, or Blockchain decisions. Take this as a fun project**
-
-**This is the project at its current state.**
 
 **Tools being used for this project:**
 
