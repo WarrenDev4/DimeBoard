@@ -20,27 +20,26 @@ This is the landing page that users will enter once starting the platform.
 
 **Dashboard**
 
-Where users can see market trends such as Stock, Crypto, and Blockchain charts that contain metrics, summaries, conversations and a quick view of the latest news.
-
+Dashboard where users can see market trends such as Stock, Crypto, and Blockchain charts that contain metrics, summaries, conversations and a quick view of the latest news.
 <img width="1901" height="866" alt="DimeBoard Dashboard" src="https://github.com/user-attachments/assets/8c5c7102-77c9-4147-90cc-45e439a45ad7" />
 
 **Markets Page**
 
-Where users will be able to view AI Market Summary, Market Sentiments, Assets and metrics and overall what's going on the market.
-
+Market page Where users will be able to view AI Market Summary, Market Sentiments, Assets and metrics and overall what's going on the market.
 <img width="1900" height="871" alt="DimeBoard Markets" src="https://github.com/user-attachments/assets/fb799ff5-eb2c-4aa4-b5e5-28a26591cc35" />
 
 **Crytpo Page**
 
-Where users can view crypto information such as Crypto summaries, tokens and all information and analysis on everything crypto related.
+Crytpo page Where users can view crypto information such as Crypto summaries, tokens and all information and analysis on everything crypto related.
 <img width="1895" height="866" alt="DimeBoard Crypto" src="https://github.com/user-attachments/assets/7031b943-24e4-424f-af75-df90563e692d" />
 
 **Blockchain Page**
 
-Where users can get an AI overview of Network Activity, Transaction / SEC data, and Network data and charts that collected from the APIs and analyzed with AI.
+Blockchain page Where users can get an AI overview of Network Activity, Transaction / SEC data, and Network data and charts that collected from the APIs and analyzed with AI.
 <img width="1897" height="871" alt="DimeBoard Blockchain" src="https://github.com/user-attachments/assets/82f45276-4610-4e51-aa7e-31338b44ae72" />
 
 **AI Insights Page**
+
 AI Insights page where users can get insights on the market and outlook all analyzed by AI that provides them with analysis and information. 
 <img width="1898" height="871" alt="DimeBoard AI Insights" src="https://github.com/user-attachments/assets/3d6faf18-78c8-490e-ac12-4403d149b3a6" /> 
 
