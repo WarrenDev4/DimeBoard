@@ -43,5 +43,5 @@ Blockchain page Where users can get an AI overview of Network Activity, Transact
 AI Insights page where users can get insights on the market and outlook all analyzed by AI that provides them with analysis and information. 
 <img width="1898" height="871" alt="DimeBoard AI Insights" src="https://github.com/user-attachments/assets/3d6faf18-78c8-490e-ac12-4403d149b3a6" /> 
 
-
+**This project is still in progress**
 
